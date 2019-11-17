@@ -1,0 +1,13 @@
+/* global typography */
+
+$baseMeasure: 1.3em;
+
+$baseFontSize: $baseMeasure;
+$baseLineHeight: 1.5;
+
+$headingFont: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bodyFont: lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+em {
+	font-style: italic;
+}

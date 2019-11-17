@@ -1,0 +1,22 @@
+---
+layout: default
+title: The Webspace of Owen McGauley
+---
+  
+  <div role="main">
+    <article>
+      <header>
+        <h1>l'Archive</h1>
+      </header>      
+	      <p class="lead">
+	      Due to an unfortunate series of events, ending in the eradication of 7 years of my blog (don't worry, it wasn't great), this section is rather sparsely populated.
+	      </p>
+		
+	      <ul class="posts">
+    		{% for post in site.posts %}
+      		<li>{{ post.date | date_to_string }} </br> <a href="{{ post.url }}">{{ post.title }}</a></li>
+    		{% endfor %}
+  		  </ul>
+  		
+
+	</article>

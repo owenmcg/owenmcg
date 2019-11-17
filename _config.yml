@@ -1,0 +1,6 @@
+name: The Webspace of Owen McGauley
+highlighter: true
+
+url: http://owenmcg.com
+
+exclude: [post-template.md]

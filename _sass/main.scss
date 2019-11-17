@@ -1,0 +1,276 @@
+
+@import "compass/reset";
+@import "partials/colour";
+@import "partials/typography";
+
+/* Global stuff */
+
+$minWidth: 320px;
+$medWidth1: 769px;
+$medWidth2: 1200px;
+$maxWidth: 1201px;
+
+
+body {
+	background-color: $bodyBG;
+	a{
+	&:link {color: $complimentary; text-decoration: none;}
+	&:visited {color: darken($complimentary, 5%); text-decoration: underline;}
+	&:hover {color: darken($complimentary, 20%); text-decoration: underline;}
+	}
+	font-size: $baseFontSize;
+	line-height: $baseLineHeight;
+	font-family: $bodyFont;
+	color: $bodyText;
+	@media screen and (min-width: $minWidth){
+	padding: 0 0.5em;
+	}
+	@media screen and (min-width: $medWidth1) and (max-width: $medWidth2){
+	padding: 0 4em;
+	}
+	@media screen and (min-width: $maxWidth){
+	padding: 0 10em;
+	}
+
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headingFont;
+	font-weight: 200;
+	color: $complimentary;
+}
+
+/* Navigation Layout */
+
+header {
+	margin: ($baseMeasure) 0 0 0;
+}
+
+header ul {
+	text-align: center;
+	font-size: 80%;
+	font-weight: 300;
+	li {
+		display: inline;
+		a {
+			&:link {display: inline-block;	padding: 0 36px; margin: 0 -14px 0 -14px; text-decoration: none;}
+			&:visited {display: inline-block;	padding: 0 36px; margin: 0 -14px 0 -14px; text-decoration: none;}
+			&:hover {display: inline-block; padding: 0 36px; margin: 0 -14px 0 -14px; text-decoration: none;}
+			&:active {display: inline-block; padding: 0 36px; margin: 0 -14px 0 -14px; text-decoration: none;}
+		}
+	}
+	@media screen and (min-width: $minWidth){
+		h1 {
+			display:none; font-size: $baseMeasure; line-height: 1;  color: $bodyBG; background-color: $complimentary; border-radius: 50%; margin-right: 6px; padding: ($baseMeasure + 0.3) 10px; border: 5px solid $bodyBG; box-shadow: 0 0 0 1px #e1d9c2; text-align: center;
+		}
+	}
+	@media screen and (min-width: $medWidth1) and (max-width: $medWidth2){
+		h1 {
+			display:inline-block; font-size: ($baseMeasure + 0.9); line-height: 1.2;  color: $bodyBG; background-color: $complimentary; border-radius: 50%; margin-right: 6px; padding: ($baseMeasure + 0.3) 20px; border: 5px solid $bodyBG; box-shadow: 0 0 0 1px #e1d9c2; text-align: center;
+		}
+	}
+	@media screen and (min-width: $maxWidth){
+		h1 {
+			display:inline-block; font-size: ($baseMeasure + 0.9); line-height: 1.2;  color: $bodyBG; background-color: $complimentary; border-radius: 50%; margin-right: 6px; padding: ($baseMeasure + 0.3) 20px; border: 5px solid $bodyBG; box-shadow: 0 0 0 1px #e1d9c2; text-align: center;
+		}
+	}
+
+}
+
+/* Articles */
+
+p {
+	margin: ($baseMeasure * 0.8) 0;
+}
+
+article img {
+	width: 100%;
+}
+
+.int {
+	margin-bottom: -7px;
+}
+
+article h1 {
+	@media screen and (min-width: $minWidth){
+		font-size: ($baseMeasure * 2);
+		margin-bottom: ($baseMeasure - 1.5);
+		text-align: center;
+	}
+	@media screen and (min-width: $medWidth1) and (max-width: $medWidth2){
+		font-size: ($baseMeasure * 3.8);
+		margin-bottom: ($baseMeasure - 1.5);
+		text-align: center;
+	}
+	@media screen and (min-width: $maxWidth){
+		font-size: ($baseMeasure * 4.4);
+		margin-bottom: ($baseMeasure - 1.5);
+		text-align: center;
+	}
+
+}
+
+article h2 {
+	font-size: ($baseMeasure * 2);
+	margin-bottom: -($baseMeasure * 0.3);
+	color: $complimentary;
+}
+
+article h3 {
+	font-size: ($baseMeasure * 1.2);
+	margin-bottom: -($baseMeasure * 0.2);
+	color: $complimentary;
+}
+
+article h4 {
+	font-size: ($baseMeasure * 1.1);
+	margin-bottom: -($baseMeasure * 0.1);
+	color: $complimentary;
+}
+
+article p:first-of-type {
+	font-size: ($baseMeasure + 0.5);
+	color: $leadText;
+	font-weight: 300;
+	@media screen and (max-width: $minWidth){
+		font-size: $baseMeasure;
+		line-height: 1.2;
+	}
+}
+
+
+.lead {
+	font-size: ($baseMeasure + 0.5);
+	color: $leadText;
+	@media screen and (max-width: $minWidth){
+		font-size: $baseMeasure;
+		line-height: 1.2;
+	}
+}
+
+.caption {
+	margin: ($baseMeasure - 1.2) 0 0 0;
+	padding-left: $baseMeasure;
+	font-size: ($baseMeasure * 0.6);
+	font-style: italic;
+}
+
+blockquote {
+	padding-left: $baseMeasure;
+	border-left: $baseMeasure solid $complimentary;
+	font-size: ($baseMeasure * 0.7);
+	font-style: italic;
+}
+
+.datetime {
+	font-family: $headingFont;
+	color: $complimentary;
+}
+
+.previous {
+	border-top: 1px solid $complimentary;
+	padding-top: 1em;
+}
+
+.previous-int {
+	border-top: 1px solid $complimentary;
+	border-bottom: 1px solid $complimentary;
+	padding: 1em 0;
+}
+
+article ul {
+	margin-bottom: ($baseMeasure * 0.8);
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.article-end {
+	color: $complimentary;
+	font-size: 130%;
+	text-align:center;
+}
+
+footer {
+	text-align: center;
+	border-top: 1px solid $complimentary;
+	font-size: ($baseMeasure * 0.6);
+	img {
+		margin: 0 $baseMeasure * 0.33; margin-bottom: -($baseMeasure * 0.4);
+	}
+}
+
+/* Archive */
+
+.posts {
+	text-align: center;
+}
+
+.posts li {
+	padding: $baseMeasure 0;
+}
+
+.posts li:hover {
+	background-color: darken($bodyBG, 5%);
+	transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+}
+
+/* Layout */
+
+#quad {
+	width: 100%;
+	float: left;
+}
+
+.quad-grid {
+	width: 49%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

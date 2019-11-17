@@ -1,0 +1,24 @@
+---
+layout: default
+title: The Webspace of Owen McGauley
+---
+
+{% for post in site.posts limit:1 %}
+	<div class="post" role="main">
+	<article>
+		<header>
+        	<h1>{{ post.title }}</h1>
+      	</header>
+			{{ post.content }}
+		<p class="datetime">
+			{{ post.date | date_to_string }}
+		</p>
+	</article>
+	{% for post in site.posts offset:1 limit:1 %}
+	<p class="previous">
+		<a href="{{ post.url }}">Previous Post: {{ post.title }}</a>
+	</p>
+	{% endfor %}
+</div>
+
+{% endfor %}
