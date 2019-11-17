@@ -5,4 +5,4 @@ url: http://owenmcg.com
 
 exclude: [post-template.md]
 
-destination: ./ public
+destination: ./public
