@@ -4,3 +4,5 @@ highlighter: true
 url: http://owenmcg.com
 
 exclude: [post-template.md]
+
+destination: ./ public
