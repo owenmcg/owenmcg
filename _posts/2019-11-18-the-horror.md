@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Horror
+category: rpg
 ---
 In my quest for a simple <abbr title="Role Playing Game">RPG</abbr> that focused less on mechanics and more on story I stumbled across [Cthulhu Dark](https://www.kickstarter.com/projects/78929588/cthulhu-dark).
 
