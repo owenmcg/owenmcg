@@ -1,6 +1,6 @@
 {
 	"license": "MIT",
 	"scripts": {
-	"build": "jekyll -b"
+	"build": "jekyll build"
   }
 }
