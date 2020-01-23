@@ -1,6 +1,6 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "jekyll build"
+	"license": "MIT",
+	"scripts": {
+	"build": "jekyll -b"
   }
 }
