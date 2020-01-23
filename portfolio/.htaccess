@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "restricted area"
-AuthUserFile http://www.owenmcg.com/.htpasswd
-require valid-user
