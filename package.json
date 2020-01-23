@@ -1,5 +1,6 @@
 {
-  "scripts": {
-    "build": "jekyll build && mv _site public"
+	"license": "MIT",
+	"scripts": {
+	"build": "jekyll build && mv _site public"
   }
 }
