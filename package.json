@@ -1,4 +1,6 @@
 {
+	"private": true,
+	"license": "MIT",
   "scripts": {
     "build": "jekyll build --output public"
   }
