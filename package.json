@@ -1,6 +1,7 @@
 {
 	"license": "MIT",
 	"scripts": {
+	"Gemfile": "gem install jekyll",
 	"build": "jekyll build"
   }
 }
