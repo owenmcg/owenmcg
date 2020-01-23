@@ -1,8 +1,8 @@
-I"Ú<p>Unfortunately my <a href="http://textpattern.com" title="Textpattern CMS">Textpattern</a> driven website collapsed over the last week or two. While trying to implement some changes the database decided to give up the ghost.</p>
+I"×<p>Unfortunately my <a href="http://textpattern.com" title="Textpattern CMS">Textpattern</a> driven website collapsed over the last week or two. While trying to implement some changes the database decided to give up the ghost.</p>
 
 <p>As I have been using Textpattern for a number of years now I never had the need to use <abbr title="File Transfer Protocol">FTP</abbr> to access the server. Due to the recent breakdown I decided to look directly at the server and found some old gems that have been sitting idle since around 2005.</p>
 
-<p><img src="http://localhost:4000/images/default-2005-2.png" /></p>
+<p><img src="http://owenmcg.com/images/default-2005-2.png" /></p>
 <p class="caption">My liquid site design circa 2005. Original page <a href="http://owenmcg.com/2006/" title="Owenmcg.com circa 2005"> is here</a>.</p>
 
 <p>The idea of returning back to a static website has been on my mind for quite some time now. With the likes of <a href="http://jekyllrb.com" title="Jekyll static site generator">Jekyll</a> and other static site generators becoming fairly straightforward to implement, it was just a matter of getting the time to properly grok the thing. My, now dead, database does herald the loss of around 7 years of lazy blogging, but ultimately adds a new lease of life to my site as I am forced to put something else up. Serendipity and what-not.</p>
